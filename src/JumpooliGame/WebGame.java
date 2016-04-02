@@ -8,9 +8,12 @@ public class WebGame extends Applet implements Runnable {
 
     int x = 1;
     int y = 1;
-    int dx = 4;
-    int dy = 3;
+    double dx = 0;
+    double dy = 0;
     int radius = 30;
+    double gravity = 15;
+    double dt = 0.2;
+    double energyloss = 0.65;
 
 
 
