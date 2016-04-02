@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78eef11e-e192-4eef-9257-f4f06513f12d" name="Default" comment="preparing to add more features." />
+    <list default="true" id="78eef11e-e192-4eef-9257-f4f06513f12d" name="Default" comment="preparing to add more features.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WebGame/JumpooliGame/WebGame.class" afterPath="$PROJECT_DIR$/out/production/WebGame/JumpooliGame/WebGame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JumpooliGame/WebGame.java" afterPath="$PROJECT_DIR$/src/JumpooliGame/WebGame.java" />
+    </list>
     <ignored path="WebGame.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,16 +29,13 @@
       <file leaf-file-name="WebGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JumpooliGame/WebGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="222">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#init#0;class#WebGame#0" expanded="true" />
                 <element signature="method#start#0;class#WebGame#0" expanded="true" />
-                <element signature="e#1168#1169#0" expanded="true" />
-                <element signature="e#1196#1197#0" expanded="true" />
-                <element signature="e#1239#1240#0" expanded="true" />
-                <element signature="e#1270#1271#0" expanded="true" />
+                <element signature="method#run#0;class#WebGame#0" expanded="true" />
                 <element signature="method#update#0;class#WebGame#0" expanded="true" />
                 <element signature="method#paint#0;class#WebGame#0" expanded="true" />
               </folding>
@@ -375,7 +376,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -435,10 +436,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
@@ -453,10 +451,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
@@ -467,9 +462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-280">
           <caret line="458" column="16" selection-start-line="458" selection-start-column="16" selection-end-line="458" selection-end-column="16" />
-          <folding>
-            <element signature="method#init#0;class#Applet#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -477,7 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="1991" column="27" selection-start-line="1991" selection-start-column="27" selection-end-line="1991" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -489,10 +480,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
@@ -507,10 +495,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
@@ -525,10 +510,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
@@ -539,9 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-280">
           <caret line="458" column="16" selection-start-line="458" selection-start-column="16" selection-end-line="458" selection-end-column="16" />
-          <folding>
-            <element signature="method#init#0;class#Applet#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -554,16 +533,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JumpooliGame/WebGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="222">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>

@@ -14,11 +14,11 @@ public class WebGame extends Applet implements Runnable {
     double gravity = 15;
     double energyloss = 0.65;
     double dt = 0.2;
-
-
-
     private Image i;
     private Graphics doubleG;
+
+
+
 
     @Override
     public void init() {
@@ -47,7 +47,7 @@ public class WebGame extends Applet implements Runnable {
                 x += dx;
 
 
-            
+
             repaint();
             try {
                 Thread.sleep(17);
