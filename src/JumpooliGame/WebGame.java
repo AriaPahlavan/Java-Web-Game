@@ -14,13 +14,42 @@ public class WebGame extends Applet implements Runnable {
 
 
     @Override
-    public void run() {
-        /**
-         *
-         * @Param
-         */
+    public void init() {
+        setSize(400, 400);
+        setBackground(Color.BLACK);
+    }
+
+    @Override
+    public void start() {
+        Thread thread = new Thread(this);
+        thread.start();
 
     }
+
+    @Override
+    public void run() {
+        while ( true ) {
+            x += dx;
+            y += dy;
+            repaint();
+            try {
+                Thread.sleep(17);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    public void stop() {
+        super.stop();
+    }
+
+    @Override
+    public void destroy() {
+        super.destroy();
+    }
+
 
     @Override
     public void paint(Graphics g) {
