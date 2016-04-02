@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78eef11e-e192-4eef-9257-f4f06513f12d" name="Default" comment="The friction is now more realistic.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/JumpooliGame/Ball.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/WebGame/JumpooliGame/WebGame.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/JumpooliGame/WebGame.java" afterPath="$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java" />
+    <list default="true" id="78eef11e-e192-4eef-9257-f4f06513f12d" name="Default" comment="Created the Ball class.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JumpooliGame/Ball.java" afterPath="$PROJECT_DIR$/src/JumpooliGame/Ball.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java" afterPath="$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java" />
     </list>
     <ignored path="WebGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,14 +26,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StartingPoint.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StartingPoint.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#init#0;class#StartingPoint#0" expanded="true" />
                 <element signature="method#start#0;class#StartingPoint#0" expanded="true" />
                 <element signature="method#run#0;class#StartingPoint#0" expanded="true" />
                 <element signature="method#update#0;class#StartingPoint#0" expanded="true" />
@@ -45,13 +42,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ball.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Ball.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Ball.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="55" column="67" selection-start-line="55" selection-start-column="67" selection-end-line="55" selection-end-column="67" />
+            <state relative-caret-position="90">
+              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
               <folding>
+                <element signature="method#Ball#0;class#Ball#0" expanded="true" />
+                <element signature="method#Ball#1;class#Ball#0" expanded="true" />
+                <element signature="method#moveLeft#0;class#Ball#0" expanded="true" />
+                <element signature="method#moveRight#0;class#Ball#0" expanded="true" />
                 <element signature="method#updateBallPosition#0;class#Ball#0" expanded="true" />
+                <element signature="method#paintBalls#0;class#Ball#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,8 +98,8 @@
         <option value="$PROJECT_DIR$/src/JavaPractice/WebGame.java" />
         <option value="$PROJECT_DIR$/src/Jumpooli/WebGame.java" />
         <option value="$PROJECT_DIR$/src/JumpooliGame/WebGame.java" />
-        <option value="$PROJECT_DIR$/src/JumpooliGame/Ball.java" />
         <option value="$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java" />
+        <option value="$PROJECT_DIR$/src/JumpooliGame/Ball.java" />
       </list>
     </option>
   </component>
@@ -132,42 +134,7 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JumpooliGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
@@ -477,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1459637370856</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Created the Ball class.">
+      <created>1459638034536</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1459638034536</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -528,7 +502,8 @@
     <MESSAGE value="Added a ground friction member variable." />
     <MESSAGE value="Added friction. There are some bugs." />
     <MESSAGE value="The friction is now more realistic." />
-    <option name="LAST_COMMIT_MESSAGE" value="The friction is now more realistic." />
+    <MESSAGE value="Created the Ball class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the Ball class." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -547,7 +522,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#start#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#run#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#update#0;class#StartingPoint#0" expanded="true" />
@@ -562,7 +536,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#start#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#run#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#update#0;class#StartingPoint#0" expanded="true" />
@@ -595,7 +568,6 @@
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#start#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#run#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#update#0;class#StartingPoint#0" expanded="true" />
@@ -610,7 +582,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#start#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#run#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#update#0;class#StartingPoint#0" expanded="true" />
@@ -625,7 +596,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#start#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#run#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#update#0;class#StartingPoint#0" expanded="true" />
@@ -651,27 +621,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Ball.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="55" column="67" selection-start-line="55" selection-start-column="67" selection-end-line="55" selection-end-column="67" />
-          <folding>
-            <element signature="method#updateBallPosition#0;class#Ball#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#start#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#run#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#update#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#paint#0;class#StartingPoint#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Ball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding>
+            <element signature="method#Ball#0;class#Ball#0" expanded="true" />
+            <element signature="method#Ball#1;class#Ball#0" expanded="true" />
+            <element signature="method#moveLeft#0;class#Ball#0" expanded="true" />
+            <element signature="method#moveRight#0;class#Ball#0" expanded="true" />
+            <element signature="method#updateBallPosition#0;class#Ball#0" expanded="true" />
+            <element signature="method#paintBalls#0;class#Ball#0" expanded="true" />
           </folding>
         </state>
       </provider>

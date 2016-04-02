@@ -6,11 +6,15 @@ import java.awt.*;
 
 public class StartingPoint extends Applet implements Runnable {
 
+    Ball b;
+    Ball b2;
     private Image i;
     private Graphics doubleG;
 
     @Override
     public void init() {
+        b = new Ball();
+        b2 = new Ball(250, 250);
         setSize(800, 800);
         setBackground(Color.BLACK);
     }
@@ -25,6 +29,8 @@ public class StartingPoint extends Applet implements Runnable {
     @Override
     public void run() {
         while ( true ) {
+            b.updateBallPosition(this);
+            b2.updateBallPosition(this);
 
             repaint();
             try {
@@ -63,7 +69,8 @@ public class StartingPoint extends Applet implements Runnable {
 
     @Override
     public void paint(Graphics g) {
-
+        b.paintBalls(g);
+        b2.paintBalls(g);
     }
 }
 
