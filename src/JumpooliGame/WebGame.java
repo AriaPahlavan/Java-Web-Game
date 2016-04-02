@@ -44,6 +44,9 @@ public class WebGame extends Applet implements Runnable {
             } else
                 x += dx;
 
+            if ( y == this.getHeight() - radius - 1 ) {
+                dx *= xFriction;
+            }
 
             if ( y > this.getHeight() - radius - 1 ) {
                 y = this.getHeight() - radius - 1;
