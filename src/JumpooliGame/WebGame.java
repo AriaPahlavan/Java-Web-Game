@@ -45,15 +45,7 @@ public class WebGame extends Applet implements Runnable {
                 dx = -dx;
             } else
                 x += dx;
-
-            if ( y + dy > this.getHeight() - radius -1) {
-                y = this.getHeight() - radius - 1;
-                dy = -dy;
-            } if ( y + dy < 0 + radius ) {
-                y = 0 + radius;
-                dy = -dy;
-            } else
-                y += dy;
+            
             repaint();
             try {
                 Thread.sleep(17);
