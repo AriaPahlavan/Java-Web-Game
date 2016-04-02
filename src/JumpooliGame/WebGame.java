@@ -45,6 +45,8 @@ public class WebGame extends Applet implements Runnable {
                 dx = -dx;
             } else
                 x += dx;
+
+
             
             repaint();
             try {
