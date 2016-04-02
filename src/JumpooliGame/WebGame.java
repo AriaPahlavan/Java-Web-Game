@@ -13,6 +13,7 @@ public class WebGame extends Applet implements Runnable {
     int radius = 30;
 
 
+
     private Image i;
     private Graphics doubleG;
 
@@ -32,13 +33,17 @@ public class WebGame extends Applet implements Runnable {
     @Override
     public void run() {
         while ( true ) {
-            if ( x + dx > this.getWidth() - radius - 1 ) {
+            if ( x + dx > this.getWidth() - radius -1) {
                 x = this.getWidth() - radius - 1;
+                dx = -dx;
+            }
+            if ( x + dx < 0 + radius ) {
+                x = 0 + radius;
                 dx = -dx;
             } else
                 x += dx;
 
-            y += dy;
+                y += dy;
             repaint();
             try {
                 Thread.sleep(17);
