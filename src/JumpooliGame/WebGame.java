@@ -28,6 +28,16 @@ public class WebGame extends Applet implements Runnable {
 
     @Override
     public void run() {
+        while ( true ) {
+            x += dx;
+            y += dy;
+            repaint();
+            try {
+                Thread.sleep(17);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override
