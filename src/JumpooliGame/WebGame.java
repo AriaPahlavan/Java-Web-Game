@@ -13,6 +13,9 @@ public class WebGame extends Applet implements Runnable {
     int radius = 30;
 
 
+    private Image i;
+    private Graphics doubleG;
+
     @Override
     public void init() {
         setSize(400, 400);
@@ -50,6 +53,21 @@ public class WebGame extends Applet implements Runnable {
         super.destroy();
     }
 
+    @Override
+    public void update(Graphics g) {
+        if ( i == null ) {
+            i = createImage(this.getWidth(), this.getHeight());
+            doubleG = i.getGraphics();
+        }
+
+        doubleG.setColor(getBackground());
+        doubleG.fillRect(0, 0, this.getWidth(), this.getHeight());
+
+        doubleG.setColor(getForeground());
+        paint(doubleG);
+
+        g.drawImage(i, 0, 0, this);
+    }
 
     @Override
     public void paint(Graphics g) {
