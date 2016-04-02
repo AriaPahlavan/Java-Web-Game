@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78eef11e-e192-4eef-9257-f4f06513f12d" name="Default" comment="Added friction. There are some bugs.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WebGame/JumpooliGame/WebGame.class" afterPath="$PROJECT_DIR$/out/production/WebGame/JumpooliGame/WebGame.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JumpooliGame/WebGame.java" afterPath="$PROJECT_DIR$/src/JumpooliGame/WebGame.java" />
     </list>
@@ -28,12 +29,13 @@
       <file leaf-file-name="WebGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JumpooliGame/WebGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#init#0;class#WebGame#0" expanded="true" />
                 <element signature="method#start#0;class#WebGame#0" expanded="true" />
+                <element signature="method#run#0;class#WebGame#0" expanded="true" />
                 <element signature="method#update#0;class#WebGame#0" expanded="true" />
                 <element signature="method#paint#0;class#WebGame#0" expanded="true" />
               </folding>
@@ -403,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1459636980984</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added friction. There are some bugs.">
+      <created>1459637051017</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1459637051018</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -474,6 +483,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
+            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
@@ -488,6 +498,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
+            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
@@ -520,6 +531,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
+            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
@@ -534,6 +546,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
+            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
@@ -548,6 +561,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
+            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
@@ -573,12 +587,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JumpooliGame/WebGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
+            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
