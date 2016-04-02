@@ -6,23 +6,20 @@ import java.awt.*;
 
 public class WebGame extends Applet implements Runnable {
 
-    int x = 1;
-    int y = 1;
-    double dx = 0;
-    double dy = 0;
+    int x = 400;
+    int y = 0;
+    double dx = 0;  //initial sped in x direction
+    double dy = 0;  //initial sped in y direction
     int radius = 30;
     double gravity = 15;
-    double energyloss = 0.65;
+    double energyloss = 0.8;
     double dt = 0.2;
     private Image i;
     private Graphics doubleG;
 
-
-
-
     @Override
     public void init() {
-        setSize(400, 400);
+        setSize(800, 800);
         setBackground(Color.BLACK);
     }
 
@@ -36,7 +33,7 @@ public class WebGame extends Applet implements Runnable {
     @Override
     public void run() {
         while ( true ) {
-            if ( x + dx > this.getWidth() - radius -1) {
+            if ( x + dx > this.getWidth() - radius - 1 ) {
                 x = this.getWidth() - radius - 1;
                 dx = -dx;
             }
@@ -46,7 +43,19 @@ public class WebGame extends Applet implements Runnable {
             } else
                 x += dx;
 
+            if ( y > this.getHeight() - radius - 1 ) {
+                y = this.getHeight() - radius - 1;
+                dy *= energyloss;
+                dy *= -1;
+            } else {
+                //velocity formula: i.e. v = v0 + a*t
+//                dy = dy + (int)(gravity*dt);
+                dy += gravity * dt;
 
+                //displacement formula: i.e. d = v0*t + 1/2*a*t^2
+//                y = y + (int) (dy * dt + 0.5 * gravity * dt * dt);
+                y += dy * dt + .5 * gravity * dt * dt;
+            }
 
             repaint();
             try {
