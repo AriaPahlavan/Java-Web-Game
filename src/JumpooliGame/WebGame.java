@@ -32,7 +32,12 @@ public class WebGame extends Applet implements Runnable {
     @Override
     public void run() {
         while ( true ) {
-            x += dx;
+            if ( x + dx > this.getWidth() - radius - 1 ) {
+                x = this.getWidth() - radius - 1;
+                dx = -dx;
+            } else
+                x += dx;
+
             y += dy;
             repaint();
             try {
