@@ -81,9 +81,11 @@ public class StartingPoint extends Applet implements Runnable, KeyListener {
     public void keyPressed(KeyEvent e) {
         switch (e.getKeyCode()) {
             case KeyEvent.VK_RIGHT:
+            case KeyEvent.VK_D:
                 b.moveRight();
                 break;
             case KeyEvent.VK_LEFT:
+            case KeyEvent.VK_A:
                 b.moveLeft();
                 break;
         }
