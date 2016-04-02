@@ -7,12 +7,12 @@ import java.awt.*;
 public class WebGame extends Applet implements Runnable {
 
     int x = 400;
-    int y = 0;
+    int y = 25;
     double dx = 0;  //initial sped in x direction
     double dy = 0;  //initial sped in y direction
-    int radius = 30;
+    int radius = 20;
     double gravity = 15;
-    double energyloss = 0.8;
+    double energyloss = 0.65;
     double dt = 0.2;
     private Image i;
     private Graphics doubleG;
@@ -46,8 +46,11 @@ public class WebGame extends Applet implements Runnable {
             if ( y > this.getHeight() - radius - 1 ) {
                 y = this.getHeight() - radius - 1;
                 dy *= energyloss;
-                dy *= -1;
+                if ( dy < 2 ) dy = 0;
+
+                dy = -dy;
             } else {
+
                 //velocity formula: i.e. v = v0 + a*t
 //                dy = dy + (int)(gravity*dt);
                 dy += gravity * dt;
