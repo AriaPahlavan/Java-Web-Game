@@ -13,6 +13,7 @@ public class WebGame extends Applet implements Runnable {
     int radius = 20;
     double gravity = 15;
     double energyloss = 0.65;
+    double xFriction = 0.9;
     double dt = 0.2;
     private Image i;
     private Graphics doubleG;
@@ -42,6 +43,7 @@ public class WebGame extends Applet implements Runnable {
                 dx = -dx;
             } else
                 x += dx;
+
 
             if ( y > this.getHeight() - radius - 1 ) {
                 y = this.getHeight() - radius - 1;

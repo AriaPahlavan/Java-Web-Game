@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78eef11e-e192-4eef-9257-f4f06513f12d" name="Default" comment="Added gravity.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WebGame/JumpooliGame/WebGame.class" afterPath="$PROJECT_DIR$/out/production/WebGame/JumpooliGame/WebGame.class" />
+    <list default="true" id="78eef11e-e192-4eef-9257-f4f06513f12d" name="Default" comment="known gravity issues: ball keeps on wiggling when on the ground.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JumpooliGame/WebGame.java" afterPath="$PROJECT_DIR$/src/JumpooliGame/WebGame.java" />
     </list>
@@ -29,13 +28,12 @@
       <file leaf-file-name="WebGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JumpooliGame/WebGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="450">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#init#0;class#WebGame#0" expanded="true" />
                 <element signature="method#start#0;class#WebGame#0" expanded="true" />
-                <element signature="method#run#0;class#WebGame#0" expanded="true" />
                 <element signature="method#update#0;class#WebGame#0" expanded="true" />
                 <element signature="method#paint#0;class#WebGame#0" expanded="true" />
               </folding>
@@ -391,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1459632571127</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="known gravity issues: ball keeps on wiggling when on the ground.">
+      <created>1459636814826</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1459636814826</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -438,7 +443,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="preparing to add more features." />
     <MESSAGE value="Added gravity." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added gravity." />
+    <MESSAGE value="known gravity issues: ball keeps on wiggling when on the ground." />
+    <option name="LAST_COMMIT_MESSAGE" value="known gravity issues: ball keeps on wiggling when on the ground." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -459,7 +465,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
-            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
@@ -474,7 +479,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
-            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
@@ -507,7 +511,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
-            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
@@ -522,7 +525,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
-            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
@@ -537,7 +539,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
-            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
@@ -563,13 +564,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JumpooliGame/WebGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="450">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#WebGame#0" expanded="true" />
             <element signature="method#start#0;class#WebGame#0" expanded="true" />
-            <element signature="method#run#0;class#WebGame#0" expanded="true" />
             <element signature="method#update#0;class#WebGame#0" expanded="true" />
             <element signature="method#paint#0;class#WebGame#0" expanded="true" />
           </folding>
