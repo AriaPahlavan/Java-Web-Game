@@ -2,9 +2,11 @@ package JumpooliGame;
 
 import java.applet.Applet;
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 
-public class StartingPoint extends Applet implements Runnable {
+public class StartingPoint extends Applet implements Runnable, KeyListener {
 
     Ball b;
     Ball b2;
@@ -13,14 +15,16 @@ public class StartingPoint extends Applet implements Runnable {
 
     @Override
     public void init() {
-        b = new Ball();
-        b2 = new Ball(250, 250);
         setSize(800, 800);
         setBackground(Color.BLACK);
+
+        addKeyListener(this);
     }
 
     @Override
     public void start() {
+        b = new Ball();
+        b2 = new Ball(250, 250);
         Thread thread = new Thread(this);
         thread.start();
 
@@ -71,6 +75,26 @@ public class StartingPoint extends Applet implements Runnable {
     public void paint(Graphics g) {
         b.paintBalls(g);
         b2.paintBalls(g);
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        switch (e.getKeyCode()) {
+            case KeyEvent.VK_RIGHT:
+                b.moveRight();
+                break;
+            case KeyEvent.VK_LEFT:
+                b.moveLeft();
+                break;
+        }
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
     }
 }
 
