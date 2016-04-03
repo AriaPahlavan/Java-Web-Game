@@ -1,6 +1,7 @@
 package JumpooliGame;
 
 import java.awt.*;
+import java.util.Random;
 
 /**
  * WebGame
@@ -13,7 +14,24 @@ public class UpGravity extends Item {
 
     @Override
     public void paintItem(Graphics g) {
-        g.setColor(Color.RED);
+        Random r = new Random();
+        switch (r.nextInt(4)) {
+            case 0:
+                g.setColor(Color.RED);
+                break;
+            case 1:
+                g.setColor(Color.BLUE);
+                break;
+            case 2:
+                g.setColor(Color.WHITE);
+                break;
+            case 3:
+                g.setColor(Color.PINK);
+                break;
+            case 4:
+                g.setColor(Color.magenta);
+                break;
+        }
         super.paintItem(g);
     }
 }

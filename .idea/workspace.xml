@@ -4,12 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/JumpooliGame/Item.java" line="53" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78eef11e-e192-4eef-9257-f4f06513f12d" name="Default" comment="Implemented UpGravity class which is an extended version of the item to be a gravity item.">
+    <list default="true" id="78eef11e-e192-4eef-9257-f4f06513f12d" name="Default" comment="Improved the reliability of collision avoid method. many bug fixes.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JumpooliGame/Ball.java" afterPath="$PROJECT_DIR$/src/JumpooliGame/Ball.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JumpooliGame/Item.java" afterPath="$PROJECT_DIR$/src/JumpooliGame/Item.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JumpooliGame/Platform.java" afterPath="$PROJECT_DIR$/src/JumpooliGame/Platform.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java" afterPath="$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JumpooliGame/UpGravity.java" afterPath="$PROJECT_DIR$/src/JumpooliGame/UpGravity.java" />
     </list>
     <ignored path="WebGame.iws" />
@@ -32,7 +29,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StartingPoint.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StartingPoint.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -52,7 +49,7 @@
       <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="846">
+            <state relative-caret-position="954">
               <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -68,9 +65,12 @@
       <file leaf-file-name="UpGravity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JumpooliGame/UpGravity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="492">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#paintItem#0;class#UpGravity#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,8 +78,8 @@
       <file leaf-file-name="Ball.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Ball.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="18">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
                 <element signature="method#Ball#0;class#Ball#0" expanded="true" />
                 <element signature="method#Ball#1;class#Ball#0" expanded="true" />
@@ -92,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Platform.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Platform.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Platform.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="72" column="91" selection-start-line="72" selection-start-column="91" selection-end-line="72" selection-end-column="91" />
+            <state relative-caret-position="1170">
+              <caret line="65" column="64" selection-start-line="65" selection-start-column="64" selection-end-line="65" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Platform#0;class#Platform#0" expanded="true" />
@@ -147,10 +147,10 @@
         <option value="$PROJECT_DIR$/src/JavaPractice/WebGame.java" />
         <option value="$PROJECT_DIR$/src/Jumpooli/WebGame.java" />
         <option value="$PROJECT_DIR$/src/JumpooliGame/WebGame.java" />
-        <option value="$PROJECT_DIR$/src/JumpooliGame/UpGravity.java" />
         <option value="$PROJECT_DIR$/src/JumpooliGame/Item.java" />
         <option value="$PROJECT_DIR$/src/JumpooliGame/Ball.java" />
         <option value="$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java" />
+        <option value="$PROJECT_DIR$/src/JumpooliGame/UpGravity.java" />
         <option value="$PROJECT_DIR$/src/JumpooliGame/Platform.java" />
       </list>
     </option>
@@ -573,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1459656721649</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Improved the reliability of collision avoid method. many bug fixes.">
+      <created>1459714356575</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1459714356576</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -587,7 +594,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -643,7 +650,8 @@
     <MESSAGE value="Improved the game so it looks more realistic." />
     <MESSAGE value="Implemented power up items class." />
     <MESSAGE value="Implemented UpGravity class which is an extended version of the item to be a gravity item." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented UpGravity class which is an extended version of the item to be a gravity item." />
+    <MESSAGE value="Improved the reliability of collision avoid method. many bug fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved the reliability of collision avoid method. many bug fixes." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -703,7 +711,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#paintItem#0;class#UpGravity#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -769,7 +780,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#paintItem#0;class#UpGravity#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -946,17 +960,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Ball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="method#Ball#0;class#Ball#0" expanded="true" />
+            <element signature="method#Ball#1;class#Ball#0" expanded="true" />
+            <element signature="method#moveLeft#0;class#Ball#0" expanded="true" />
+            <element signature="method#moveRight#0;class#Ball#0" expanded="true" />
+            <element signature="method#updateBallPosition#0;class#Ball#0" expanded="true" />
+            <element signature="method#paintBalls#0;class#Ball#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/JumpooliGame/UpGravity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="492">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#paintItem#0;class#UpGravity#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
+        <state relative-caret-position="954">
           <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -964,6 +996,20 @@
             <element signature="method#Item#1;class#Item#0" expanded="true" />
             <element signature="method#updateItem#0;class#Item#0" expanded="true" />
             <element signature="method#performPowerUp#0;class#Item#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Platform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="65" column="64" selection-start-line="65" selection-start-column="64" selection-end-line="65" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Platform#0;class#Platform#0" expanded="true" />
+            <element signature="method#Platform#1;class#Platform#0" expanded="true" />
+            <element signature="method#updatePlatform#0;class#Platform#0" expanded="true" />
+            <element signature="method#paintPlatform#0;class#Platform#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -979,35 +1025,6 @@
             <element signature="method#paint#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#keyTyped#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#keyReleased#0;class#StartingPoint#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Ball.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="method#Ball#0;class#Ball#0" expanded="true" />
-            <element signature="method#Ball#1;class#Ball#0" expanded="true" />
-            <element signature="method#moveLeft#0;class#Ball#0" expanded="true" />
-            <element signature="method#moveRight#0;class#Ball#0" expanded="true" />
-            <element signature="method#updateBallPosition#0;class#Ball#0" expanded="true" />
-            <element signature="method#paintBalls#0;class#Ball#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Platform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="72" column="91" selection-start-line="72" selection-start-column="91" selection-end-line="72" selection-end-column="91" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Platform#0;class#Platform#0" expanded="true" />
-            <element signature="method#Platform#1;class#Platform#0" expanded="true" />
-            <element signature="method#updatePlatform#0;class#Platform#0" expanded="true" />
-            <element signature="method#paintPlatform#0;class#Platform#0" expanded="true" />
           </folding>
         </state>
       </provider>

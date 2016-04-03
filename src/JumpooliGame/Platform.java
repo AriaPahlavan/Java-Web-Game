@@ -88,18 +88,6 @@ public class Platform {
         }
 
 
-//        if ( ballY + ballRadius > y && ballY - ballRadius < y + height ) {
-//            if ( ballX > x && ballX < x + width ) {
-//                b.setY(y - ballRadius);
-//                b.setDy(b.getGAME_Dy());
-//            }
-//        }
-//
-//        if ( ballX + ballRadius > x && ballX - ballRadius < x + width ) {
-//            if ( ballY > y && ballY < y + height ) {
-//                b.setDx(b.getDx() * -1);
-//            }
-//        }
     }
 
     /**
