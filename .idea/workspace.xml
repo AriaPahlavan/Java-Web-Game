@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78eef11e-e192-4eef-9257-f4f06513f12d" name="Default" comment="Update the collision check algorithm. Known issues exist.">
+    <list default="true" id="78eef11e-e192-4eef-9257-f4f06513f12d" name="Default" comment="Improved the game so it looks more realistic.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/JumpooliGame/Item.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JumpooliGame/Ball.java" afterPath="$PROJECT_DIR$/src/JumpooliGame/Ball.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JumpooliGame/Platform.java" afterPath="$PROJECT_DIR$/src/JumpooliGame/Platform.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java" afterPath="$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java" />
     </list>
     <ignored path="WebGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,16 +26,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StartingPoint.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StartingPoint.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+            <state relative-caret-position="216">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#start#0;class#StartingPoint#0" expanded="true" />
                 <element signature="method#run#0;class#StartingPoint#0" expanded="true" />
                 <element signature="method#update#0;class#StartingPoint#0" expanded="true" />
+                <element signature="method#paint#0;class#StartingPoint#0" expanded="true" />
                 <element signature="method#keyTyped#0;class#StartingPoint#0" expanded="true" />
                 <element signature="method#keyReleased#0;class#StartingPoint#0" expanded="true" />
               </folding>
@@ -44,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Platform.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Platform.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Platform.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+            <state relative-caret-position="312">
+              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Platform#0;class#Platform#0" expanded="true" />
@@ -60,11 +60,27 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Item.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Item#1;class#Item#0" expanded="true" />
+                <element signature="method#updatePlatform#0;class#Item#0" expanded="true" />
+                <element signature="method#collisionAvoid#0;class#Item#0" expanded="true" />
+                <element signature="method#paintPlatform#0;class#Item#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Ball.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Ball.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+            <state relative-caret-position="456">
+              <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
               <folding>
                 <element signature="method#Ball#0;class#Ball#0" expanded="true" />
                 <element signature="method#Ball#1;class#Ball#0" expanded="true" />
@@ -77,7 +93,6 @@
                 <element signature="method#moveLeft#0;class#Ball#0" expanded="true" />
                 <element signature="method#moveRight#0;class#Ball#0" expanded="true" />
                 <element signature="method#updateBallPosition#0;class#Ball#0" expanded="true" />
-                <element signature="method#paintBalls#0;class#Ball#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,8 +138,9 @@
         <option value="$PROJECT_DIR$/src/Jumpooli/WebGame.java" />
         <option value="$PROJECT_DIR$/src/JumpooliGame/WebGame.java" />
         <option value="$PROJECT_DIR$/src/JumpooliGame/Ball.java" />
-        <option value="$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java" />
         <option value="$PROJECT_DIR$/src/JumpooliGame/Platform.java" />
+        <option value="$PROJECT_DIR$/src/JumpooliGame/Item.java" />
+        <option value="$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java" />
       </list>
     </option>
   </component>
@@ -161,9 +177,9 @@
       <pane id="ProjectPane">
         <subPane />
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -525,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1459651467496</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Improved the game so it looks more realistic.">
+      <created>1459654377071</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1459654377071</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -583,7 +606,8 @@
     <MESSAGE value="Implemented a platform class which let's the balls bounce back in the opposite direction." />
     <MESSAGE value="Added collision avoid feature in the y direction, so the ball would bounce off of the platform." />
     <MESSAGE value="Update the collision check algorithm. Known issues exist." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update the collision check algorithm. Known issues exist." />
+    <MESSAGE value="Improved the game so it looks more realistic." />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved the game so it looks more realistic." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -605,6 +629,7 @@
             <element signature="method#start#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#run#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#update#0;class#StartingPoint#0" expanded="true" />
+            <element signature="method#paint#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#keyTyped#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#keyReleased#0;class#StartingPoint#0" expanded="true" />
           </folding>
@@ -641,7 +666,6 @@
             <element signature="method#moveLeft#0;class#Ball#0" expanded="true" />
             <element signature="method#moveRight#0;class#Ball#0" expanded="true" />
             <element signature="method#updateBallPosition#0;class#Ball#0" expanded="true" />
-            <element signature="method#paintBalls#0;class#Ball#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -655,6 +679,7 @@
             <element signature="method#start#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#run#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#update#0;class#StartingPoint#0" expanded="true" />
+            <element signature="method#paint#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#keyTyped#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#keyReleased#0;class#StartingPoint#0" expanded="true" />
           </folding>
@@ -670,6 +695,7 @@
             <element signature="method#start#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#run#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#update#0;class#StartingPoint#0" expanded="true" />
+            <element signature="method#paint#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#keyTyped#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#keyReleased#0;class#StartingPoint#0" expanded="true" />
           </folding>
@@ -703,6 +729,7 @@
             <element signature="method#start#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#run#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#update#0;class#StartingPoint#0" expanded="true" />
+            <element signature="method#paint#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#keyTyped#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#keyReleased#0;class#StartingPoint#0" expanded="true" />
           </folding>
@@ -718,6 +745,7 @@
             <element signature="method#start#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#run#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#update#0;class#StartingPoint#0" expanded="true" />
+            <element signature="method#paint#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#keyTyped#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#keyReleased#0;class#StartingPoint#0" expanded="true" />
           </folding>
@@ -733,6 +761,7 @@
             <element signature="method#start#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#run#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#update#0;class#StartingPoint#0" expanded="true" />
+            <element signature="method#paint#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#keyTyped#0;class#StartingPoint#0" expanded="true" />
             <element signature="method#keyReleased#0;class#StartingPoint#0" expanded="true" />
           </folding>
@@ -758,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Ball.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        <state relative-caret-position="456">
+          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
           <folding>
             <element signature="method#Ball#0;class#Ball#0" expanded="true" />
             <element signature="method#Ball#1;class#Ball#0" expanded="true" />
@@ -772,36 +801,50 @@
             <element signature="method#moveLeft#0;class#Ball#0" expanded="true" />
             <element signature="method#moveRight#0;class#Ball#0" expanded="true" />
             <element signature="method#updateBallPosition#0;class#Ball#0" expanded="true" />
-            <element signature="method#paintBalls#0;class#Ball#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java">
+    <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+        <state relative-caret-position="306">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#start#0;class#StartingPoint#0" expanded="true" />
-            <element signature="method#run#0;class#StartingPoint#0" expanded="true" />
-            <element signature="method#update#0;class#StartingPoint#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#StartingPoint#0" expanded="true" />
-            <element signature="method#keyReleased#0;class#StartingPoint#0" expanded="true" />
+            <element signature="method#Item#1;class#Item#0" expanded="true" />
+            <element signature="method#updatePlatform#0;class#Item#0" expanded="true" />
+            <element signature="method#collisionAvoid#0;class#Item#0" expanded="true" />
+            <element signature="method#paintPlatform#0;class#Item#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JumpooliGame/Platform.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        <state relative-caret-position="312">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Platform#0;class#Platform#0" expanded="true" />
             <element signature="method#Platform#1;class#Platform#0" expanded="true" />
             <element signature="method#collisionAvoid#0;class#Platform#0" expanded="true" />
             <element signature="method#paintPlatform#0;class#Platform#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JumpooliGame/StartingPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#start#0;class#StartingPoint#0" expanded="true" />
+            <element signature="method#run#0;class#StartingPoint#0" expanded="true" />
+            <element signature="method#update#0;class#StartingPoint#0" expanded="true" />
+            <element signature="method#paint#0;class#StartingPoint#0" expanded="true" />
+            <element signature="method#keyTyped#0;class#StartingPoint#0" expanded="true" />
+            <element signature="method#keyReleased#0;class#StartingPoint#0" expanded="true" />
           </folding>
         </state>
       </provider>
