@@ -30,6 +30,10 @@ public class Ball {
         return gravity;
     }
 
+    public int getRADIUS() {
+        return RADIUS;
+    }
+
     public void setGravity(double gravity) {
         this.gravity = gravity;
     }

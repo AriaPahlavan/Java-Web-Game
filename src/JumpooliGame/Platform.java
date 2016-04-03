@@ -10,7 +10,7 @@ public class Platform {
     private int dx, x, y, width, height;
 
     public Platform() {
-        this.dx = -10;
+        this.dx = -5;
         this.x = 300;
         this.y = 300;
         this.width = 120;
@@ -22,8 +22,15 @@ public class Platform {
      *
      * @param display
      */
-    public void updatePlatform(StartingPoint display) {
-        x += dx;
+    public void updatePlatform(StartingPoint display, Ball b) {
+//        x += dx;
+        int ballY = b.getY();
+        int ballX = b.getX();
+        int ballRadius = b.getRADIUS();
+
+        if ( ballY + ballRadius >= y || (ballY > y && ballY <= y + height) ) {
+            b.setDy(b.getDy() * -1);
+        }
     }
 
     /**
