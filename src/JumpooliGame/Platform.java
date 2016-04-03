@@ -10,11 +10,17 @@ public class Platform {
     private int dx, x, y, width, height;
 
     public Platform() {
-        this.dx = -5;
+        this.dx = -10;
         this.x = 300;
         this.y = 300;
         this.width = 120;
         this.height = 40;
+    }
+
+    public Platform(int x, int y) {
+        this();
+        this.x = x;
+        this.y = y;
     }
 
     /**
@@ -28,8 +34,17 @@ public class Platform {
         int ballX = b.getX();
         int ballRadius = b.getRADIUS();
 
-        if ( ballY + ballRadius >= y || (ballY > y && ballY <= y + height) ) {
-            b.setDy(b.getDy() * -1);
+        if ( ballY + ballRadius > y && ballY - ballRadius < y + height ) {
+            if ( ballX > x && ballX < x + width ) {
+                b.setY(y - ballRadius);
+                b.setDy(b.getDy() * -1);
+            }
+        }
+
+        if ( ballX + ballRadius > x && ballX - ballRadius < x + width ) {
+            if ( ballY > y && ballY < y + height ) {
+                b.setDx(b.getDx() * -1);
+            }
         }
     }
 
