@@ -29,7 +29,7 @@ public class Item {
      *
      * @param display
      */
-    public void updatePlatform(StartingPoint display, Ball b) {
+    public void updateItem(StartingPoint display, Ball b) {
         x += dx;
         collisionAvoid(b);
 
@@ -50,15 +50,15 @@ public class Item {
         int ballX = b.getX();
         int ballRadius = b.getRADIUS();
 
-        if ( ballY + ballRadius > y && ballY - ballRadius < y + height ) {
-            if ( ballX > x && ballX < x + width ) {
+        if ( ballY + ballRadius > y && ballY - ballRadius < y + RADIUS ) {
+            if ( ballX > x && ballX < x + RADIUS ) {
                 b.setY(y - ballRadius);
                 b.setDy(b.getGameDy());
             }
         }
 
-        if ( ballX + ballRadius > x && ballX - ballRadius < x + width ) {
-            if ( ballY > y && ballY < y + height ) {
+        if ( ballX + ballRadius > x && ballX - ballRadius < x + RADIUS ) {
+            if ( ballY > y && ballY < y + RADIUS ) {
                 b.setDx(b.getDx() * -1);
             }
         }
@@ -69,7 +69,7 @@ public class Item {
      *
      * @param g
      */
-    public void paintPlatform(Graphics g) {
+    public void paintItem(Graphics g) {
         g.setColor(Color.PINK);
         g.fillOval(x - RADIUS, y - RADIUS, RADIUS * 2, RADIUS * 2);
     }
