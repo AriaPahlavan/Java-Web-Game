@@ -12,7 +12,7 @@ public class Ball {
     private double dx = 0;  //initial sped in x direction
     private double dy = 0;  //initial sped in y direction
     private final int RADIUS = 20;
-    private final double GRAVITY = 9.8;
+    private double gravity = 9.8;
     private final double ENERGY_LOSS = 1;
     private final double FRICTION = 0.95;
     private double dt = 0.2;
@@ -24,6 +24,46 @@ public class Ball {
     public Ball(int x, int y) {
         this.x = x;
         this.y = y;
+    }
+
+    public double getGravity() {
+        return gravity;
+    }
+
+    public void setGravity(double gravity) {
+        this.gravity = gravity;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public void setDx(double dx) {
+        this.dx = dx;
+    }
+
+    public void setDy(double dy) {
+        this.dy = dy;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public double getDx() {
+        return dx;
+    }
+
+    public double getDy() {
+        return dy;
     }
 
     /**
@@ -75,12 +115,12 @@ public class Ball {
         } else {
 
             //velocity formula: i.e. v = v0 + a*t
-//                dy = dy + (int)(GRAVITY*dt);
-            dy += GRAVITY * dt;
+//                dy = dy + (int)(gravity*dt);
+            dy += gravity * dt;
 
             //displacement formula: i.e. d = v0*t + 1/2*a*t^2
-//                y = y + (int) (dy * dt + 0.5 * GRAVITY * dt * dt);
-            y += dy * dt + .5 * GRAVITY * dt * dt;
+//                y = y + (int) (dy * dt + 0.5 * gravity * dt * dt);
+            y += dy * dt + .5 * gravity * dt * dt;
         }
     }
 
