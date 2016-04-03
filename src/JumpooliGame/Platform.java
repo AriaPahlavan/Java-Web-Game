@@ -1,6 +1,7 @@
 package JumpooliGame;
 
 import java.awt.*;
+import java.util.Random;
 
 /**
  * WebGame
@@ -29,7 +30,23 @@ public class Platform {
      * @param display
      */
     public void updatePlatform(StartingPoint display, Ball b) {
-//        x += dx;
+        x += dx;
+        collisionAvoid(b);
+
+
+        Random random = new Random();
+        if ( x + width <= 0 ) {
+            x = display.getWidth() + random.nextInt(500);
+//            y += random.nextInt(80);
+        }
+    }
+
+    /**
+     * Ensures that we void all collisions of balls with any platform.
+     *
+     * @param b
+     */
+    private void collisionAvoid(Ball b) {
         int ballY = b.getY();
         int ballX = b.getX();
         int ballRadius = b.getRADIUS();
@@ -37,7 +54,7 @@ public class Platform {
         if ( ballY + ballRadius > y && ballY - ballRadius < y + height ) {
             if ( ballX > x && ballX < x + width ) {
                 b.setY(y - ballRadius);
-                b.setDy(b.getDy() * -1);
+                b.setDy(b.getGameDy());
             }
         }
 

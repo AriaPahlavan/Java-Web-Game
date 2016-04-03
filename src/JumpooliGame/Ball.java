@@ -17,6 +17,7 @@ public class Ball {
     private final double FRICTION = 0.95;
     private double dt = 0.2;
     private final double SPEED_LIMIT = 20;
+    private double gameDy = -75;
 
     public Ball() {
     }
@@ -32,6 +33,10 @@ public class Ball {
 
     public int getRADIUS() {
         return RADIUS;
+    }
+
+    public double getGameDy() {
+        return gameDy;
     }
 
     public void setGravity(double gravity) {
@@ -115,7 +120,7 @@ public class Ball {
             dy *= ENERGY_LOSS;
             if ( dy < 2 ) dy = 0;
 
-            dy = -dy;
+            dy = gameDy;
         } else {
 
             //velocity formula: i.e. v = v0 + a*t
@@ -130,6 +135,7 @@ public class Ball {
 
     /**
      * Paints the ball on the screen
+     *
      * @param g
      */
     public void paintBalls(Graphics g) {
