@@ -13,7 +13,7 @@ public class UpGravity extends Item {
 
     @Override
     public void paintItem(Graphics g) {
-        super.paintItem(g);
         g.setColor(Color.RED);
+        super.paintItem(g);
     }
 }

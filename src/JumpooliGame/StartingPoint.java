@@ -10,7 +10,7 @@ import java.util.Random;
 public class StartingPoint extends Applet implements Runnable, KeyListener {
 
     Ball b;
-    Platform[] p = new Platform[7];
+    Platform[] p = new Platform[5];
     Item[] item = new Item[3];
     private Image i;
     private Graphics doubleG;
@@ -32,7 +32,7 @@ public class StartingPoint extends Applet implements Runnable, KeyListener {
             p[i] = new Platform(getWidth() + 200 * i, getHeight() - 40 - r.nextInt(400));
         }
         for ( int i = 0; i < item.length; i++ ) {
-            item[i] = new Item(getWidth() + 2000 * i);
+            item[i] = new UpGravity(getWidth() + 2000 * i);
         }
         Thread thread = new Thread(this);
         thread.start();

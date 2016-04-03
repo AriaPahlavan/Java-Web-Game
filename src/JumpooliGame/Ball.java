@@ -7,17 +7,17 @@ import java.awt.*;
  * Created by Aria Pahlavan on Apr 2016.
  */
 public class Ball {
-    private int x = 400;
-    private int y = 25;
+    private int x = 350;
+    private int y = 20;
     private double dx = 0;  //initial sped in x direction
     private double dy = 0;  //initial sped in y direction
     private final int RADIUS = 20;
     private double gravity = 9.8;
     private final double ENERGY_LOSS = 1;
-    private final double FRICTION = 0.95;
+    private final double FRICTION = 0.8;
     private double dt = 0.2;
-    private final double SPEED_LIMIT = 20;
-    private double gameDy = -75;
+    private final double SPEED_LIMIT = 10;
+    protected final double GAME_Dy = -80;
 
     public Ball() {
     }
@@ -35,9 +35,6 @@ public class Ball {
         return RADIUS;
     }
 
-    public double getGameDy() {
-        return gameDy;
-    }
 
     public void setGravity(double gravity) {
         this.gravity = gravity;
@@ -79,8 +76,8 @@ public class Ball {
      * Adds to left direction velocity if the speed limit won't be reached.
      */
     public void moveLeft() {
-        if ( Math.abs(dx - 1) < SPEED_LIMIT ) {
-            dx -= 1;
+        if ( Math.abs(dx - 3) < SPEED_LIMIT ) {
+            dx -= 3;
         }
     }
 
@@ -89,8 +86,8 @@ public class Ball {
      * Adds to right direction velocity if the speed limit won't be reached.
      */
     public void moveRight() {
-        if ( dx + 1 < SPEED_LIMIT ) {
-            dx += 1;
+        if ( dx + 3 < SPEED_LIMIT ) {
+            dx += 3;
         }
     }
 
@@ -120,15 +117,13 @@ public class Ball {
             dy *= ENERGY_LOSS;
             if ( dy < 2 ) dy = 0;
 
-            dy = gameDy;
+            dy = GAME_Dy;
         } else {
 
             //velocity formula: i.e. v = v0 + a*t
-//                dy = dy + (int)(gravity*dt);
             dy += gravity * dt;
 
             //displacement formula: i.e. d = v0*t + 1/2*a*t^2
-//                y = y + (int) (dy * dt + 0.5 * gravity * dt * dt);
             y += dy * dt + .5 * gravity * dt * dt;
         }
     }

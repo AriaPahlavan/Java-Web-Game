@@ -13,7 +13,7 @@ public class Item {
     private final int RADIUS = 10;
 
     public Item() {
-        this.dx = -2;
+        this.dx = -1;
         this.x = 0;
         Random r = new Random();
         this.y = r.nextInt(400) + RADIUS;
@@ -36,32 +36,32 @@ public class Item {
         Random random = new Random();
         if ( x < 0 - RADIUS ) {
             x = display.getWidth() + 2000 + random.nextInt(300);
-//            y += random.nextInt(80);
+            y = display.getHeight() - 40 - random.nextInt(400);
         }
     }
 
     /**
      * Ensures that we void all collisions of balls with any platform.
      *
-     * @param b
+     * @param ball
      */
-    private void collisionAvoid(Ball b) {
-        int ballY = b.getY();
-        int ballX = b.getX();
-        int ballRadius = b.getRADIUS();
+    private void collisionAvoid(Ball ball) {
+        int ballY = ball.getY();
+        int ballX = ball.getX();
+        int ballRadius = ball.getRADIUS();
+        int a = x - ballX;
+        int b = y - ballY;
+        boolean hasCollided = ((double) (ballRadius + RADIUS) > Math.sqrt((double) a * a + (double) b * b));
 
-        if ( ballY + ballRadius > y && ballY - ballRadius < y + RADIUS ) {
-            if ( ballX > x && ballX < x + RADIUS ) {
-                b.setY(y - ballRadius);
-                b.setDy(b.getGameDy());
-            }
+        if ( hasCollided ) {
+            performPowerUp();
+            x = RADIUS * -1;
+            y = RADIUS * -1;
         }
+    }
 
-        if ( ballX + ballRadius > x && ballX - ballRadius < x + RADIUS ) {
-            if ( ballY > y && ballY < y + RADIUS ) {
-                b.setDx(b.getDx() * -1);
-            }
-        }
+    private void performPowerUp() {
+
     }
 
     /**
@@ -70,7 +70,6 @@ public class Item {
      * @param g
      */
     public void paintItem(Graphics g) {
-        g.setColor(Color.PINK);
         g.fillOval(x - RADIUS, y - RADIUS, RADIUS * 2, RADIUS * 2);
     }
 }
